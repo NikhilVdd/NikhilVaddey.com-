@@ -43,7 +43,7 @@ function EvolvingSculpture() {
           >
             <capsuleGeometry args={[0.36, 1.25, 12, 28]} />
             <meshStandardMaterial
-              color={index === 2 ? "#d8ff85" : "#aeb8ba"}
+              color={index === 2 ? "#8b68e8" : index === 1 ? "#d7ab55" : "#aeb8ba"}
               metalness={0.92}
               roughness={index === 2 ? 0.25 : 0.14}
               envMapIntensity={1.3}
@@ -64,7 +64,7 @@ function EvolvingSculpture() {
         {[-1, 1].map((side) => (
           <mesh key={side} position={[side * 0.58, -0.1, 0.82]}>
             <sphereGeometry args={[0.09, 24, 24]} />
-            <meshBasicMaterial color="#c5f36b" toneMapped={false} />
+            <meshBasicMaterial color={side === -1 ? "#8b68e8" : "#d7ab55"} toneMapped={false} />
           </mesh>
         ))}
       </group>
@@ -82,8 +82,8 @@ export default function SculptureScene() {
       >
         <ambientLight intensity={0.7} />
         <spotLight position={[4, 6, 5]} intensity={95} angle={0.35} penumbra={1} color="#f3f7ee" castShadow />
-        <pointLight position={[-4, -2, 3]} intensity={18} color="#c5f36b" />
-        <pointLight position={[4, -3, -2]} intensity={14} color="#d7b18a" />
+        <pointLight position={[-4, -2, 3]} intensity={18} color="#8b68e8" />
+        <pointLight position={[4, -3, -2]} intensity={14} color="#d7ab55" />
         <EvolvingSculpture />
         <Environment preset="city" />
       </Canvas>

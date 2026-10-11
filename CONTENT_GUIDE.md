@@ -23,5 +23,5 @@ Project, story, experience, update, and interest content is centralized in `lib/
 
 - NnR Technologies says “five-figure revenue” without claiming a monthly cadence.
 - Citco savings are labeled projected, not realized.
-- ORbit, GRUB, and market interfaces clearly distinguish illustrative or conceptual content.
+- Orbit, GRUB, and market interfaces clearly distinguish illustrative or conceptual content.
 - Never add confidential client or Citco materials.
