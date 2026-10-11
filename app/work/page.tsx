@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/plain-link";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { projects } from "@/lib/site-content";
 
